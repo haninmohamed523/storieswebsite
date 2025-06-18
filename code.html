@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sticky Navbar Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Garamond, serif;
+      background-color: rgb(194, 194, 194);
+    }
+ .ffixed{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  border: 3px solid #7b0d0ddd;
+  background-color: rgb(255, 255, 255);
+}
+    .header {
+      background-color: #151c42;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: static;
+    }
+
+    .navbar-container {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #333;
+    }
+
+    .headbar {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .headbar li {
+      list-style-type: none;
+    }
+
+    .headbar li a {
+      display: block;
+      color: rgb(223, 223, 223);
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .headbar li a:hover {
+      background-color: #111;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .sidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 220px;
+      background-color: #e8eaf6;
+      padding: 15px;
+      height:auto;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      position: relative;
+      height:auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>My Website</h1>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <div class="navbar-container">
+    <ul class="headbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Another choices</h3>
+      <ul style="list-style-type:none;">
+        <li><a href="#">story 1</a></li>
+        <li><a href="#">story 2</a></li>
+        <li><a href="#">story 3</a></li>
+        <li><a href="#">story 4</a></li>
+        <li><a href="#">story 5</a></li>
+        <li><a href="#">story 6</a></li>
+        <li><a href="#">story 7</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h2>stories about success</h2>
+      <p>
+        <strong>1. "The Violin Case"</strong><br><br>
+        Lena was a street musician in a bustling city. She played her old violin on the same corner every day, hoping someone would stop—not just to listen, but to <em>hear</em> her.<br><br>
+
+        People hurried past. Some dropped coins. Few looked her in the eye. But Lena played anyway. Rain or sun, tired or not, her music filled the air with beauty most never noticed.<br><br>
+
+        One winter morning, a man in a dark coat paused. He listened for a long time, then asked, “Where did you learn to play like that?”<br><br>
+
+        “My mother taught me,” Lena replied. “She said if you play from your soul, someone’s soul will answer.”<br><br>
+
+        The man smiled and handed her a card. “I’m a conductor for the city orchestra. We could use a soul like yours.”<br><br>
+
+        Two years later, Lena played her first solo on the grandest stage in the country. Same violin. Same heart. But now, the world was listening.
+      </p>
+      <hr>
+      <p>
+        <strong>2. "The Seed"</strong><br><br>
+        A teacher gave each of her students a seed. “Plant it, water it, and bring it back in six months. The best plant will win a prize.”<br><br>
+
+        Everyone rushed home, excited. Except for Mina. No matter how carefully she watered, her seed never sprouted. Still, she brought the same empty pot to school six months later, heart heavy with shame.<br><br>
+
+        To her surprise, the teacher smiled and pointed to her. “Mina wins.”<br><br>
+
+        Confused whispers filled the room.<br><br>
+
+        “You all received boiled seeds,” the teacher explained. “They were never meant to grow. Yet most of you swapped them for real ones. Only Mina was honest. That’s success—not the tallest plant, but the truest heart.”
+      </p>
+      <hr>
+      <p>
+        <strong>3. "The Last Brick"</strong><br><br>
+        In a dusty village nestled between two hills, lived a mason named Ravi. He wasn't rich, famous, or particularly strong. But every morning for twenty years, Ravi walked to a small plot of land and laid bricks—one by one—trying to build a house for his family.<br><br>
+
+        People laughed at him. “One brick a day? At this rate, your grandchildren might live in that house!” But Ravi kept building. Quietly. Steadily. Even when his hands ached or the rains washed away his work, he showed up.<br><br>
+
+        One evening, just as the sun dipped behind the hills, Ravi placed the final brick. He stepped back, tears in his eyes. The house wasn’t grand, but it stood tall—a testament to patience, grit, and faith.<br><br>
+
+        That night, the village gathered around the finished home. The same people who once laughed now clapped. One asked, “How did you keep going all these years?”<br><br>
+
+        Ravi smiled. “Success isn’t about speed or applause. It’s just about not stopping.”<br><br>
+
+        And in the warm glow of lanterns, under a sky of stars, success stood silent—but complete—brick by brick.
+      </p>
+      
+    </main>
+  </div>
+<p class="ffixed">Remember<br> "Success consists of going from failure to failure without loss of enthusiasm,"</p>
+</body>
+</html>
